@@ -1,5 +1,5 @@
-def call(String name = 'name', String place = 'place', String qualification = 'qualification')
-pipeline {
+def call(String name = 'name', String place = 'place', String qualification = 'qualification') {
+    pipeline {
     environment {
         name = "$name"
         place = "$place"
@@ -16,4 +16,5 @@ pipeline {
             }
         }
     }
+}
 }
