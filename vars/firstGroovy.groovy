@@ -11,8 +11,7 @@ def call(String name = 'name', String place = 'place', String qualification = 'q
     stages {
         stage('Printing vars') {
             steps {  
-                sh 'ls'
-                sh echo "Welcome $name from $place for completing $qualification"
+                echo "Welcome $name from $place for completing $qualification"
             }
         }
     }
