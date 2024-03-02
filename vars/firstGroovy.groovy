@@ -17,7 +17,7 @@ def call(String name = 'name', String place = 'place', String qualification = 'q
         }
         stage('gitclone') {
             steps {
-                git '$url'
+                git url:'$url'
                 sh 'ls'
             }
         }
